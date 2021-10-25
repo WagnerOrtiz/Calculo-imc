@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(237, 229, 229);
+    text-align: center;
+    padding: 20px;
+    font: normal 0.8em sans-serif;   
+}
+
+h1{
+    font: bold 3em sans-serif;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.main-card{
+    background-color: rgb(40, 40, 53);
+    border-radius: 10px;
+    width: 60%;
+    margin: 30px auto;
+    color: white;
+    padding: 30px 30px 30px 30px;
+}
+
+.wrapper-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-select-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.div-select-inputs>input, select{
+    width: 130px;
+    margin: 5px 10px 10px 10px;
+    text-align: left;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+.fas, .fa-arrow-right{
+    font-size: 3em;
+}
+
+.div-bmi > input{
+    height: 70px;
+    width: 130px;
+    margin: 5px 10px 10px 10px;
+    text-align: left;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    font: bold 2em sans-serif;
+    text-align: center;
+}
+
+
+.button{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+table{
+    text-align: center;
+    border: 1px solid black;
+    margin: 50px auto 30px auto ;
+}
+
+th, td{
+    width: 130px ;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th{
+    background-color: gray;
+}
+
+

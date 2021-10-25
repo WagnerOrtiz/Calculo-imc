@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0 , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imc.css">
+    <script src="https://kit.fontawesome.com/8145e8cf22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Body Mass Index</h1>
+
+    <div class="main-card">
+        <h2>Check your BMI. Stay healthy!</h2>
+        <div class="wrapper-inputs">
+            <div class="div-select-inputs">
+                <select name="select-unit-weight" id="select-unit-weight">
+                    <option value="#" selected>Select unit...</option>
+                    <option value="Kg">Kilograms (Kg)</option>
+                    <option value="lbs">Pounds (lbs)</option>
+                </select>
+                <input type="number" id="value-weight" name="value-weight" placeholder="Ex: 123.5">
+                <p>Your weight</p>
+            </div>
+
+            <div class="div-select-inputs">
+                <select name="select-unit-height" id="select-unit-height">
+                    <option value="#" selected>Select unit...</option>
+                    <option value="m">Meter (m)</option>
+                    <option value="ft">Foot (ft)</option>
+                </select>
+                <input type="text" id="value-height" name="value-height" placeholder="Ex:1.85">
+                <p>Your height</p>
+            </div>
+
+            <div class="select1">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="div-bmi">
+                <input type="number" readonly id="bmi" name="bmi">
+                <p>Your BMI</p>
+            </div>
+
+            <div class="div-bmi">
+                <input type="text" readonly id="status" name="status" style="font-size: 1.5em;">
+                <p>Status</p>
+            </div>
+           
+        </div>
+        <input type="button" class="button" name="button" value="Calculate" onclick="process()">
+    </div>   
+    
+    <table>
+        <tr>
+            <th>Classification</th>
+            <th>Thin</th>
+            <th>Healthy</th>
+            <th>Over-weight</th>
+            <th>Fat</th>
+            <th>Morbid</th>
+        </tr>
+        <tr>
+            <th>Body Mass Index (BMI)</th>
+            <td>BMI &lt; 20</td>
+            <td>20 &lt; BMI &lt; 25</td>
+            <td>25 &lt; BMI &lt; 30</td>
+            <td>30 &lt; BMI &lt; 35</td>
+            <td>BMI &gt; 35</td>
+
+
+        </tr>
+    </table>
+
+    <footer>
+        &copy; Ortiz
+    </footer>
+
+
+    <script src="imc.js"></script>
+</body>
+</html>
+
